@@ -1,0 +1,8 @@
+{
+  "name": "sivoy-test",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "0a2641cd"
+}
