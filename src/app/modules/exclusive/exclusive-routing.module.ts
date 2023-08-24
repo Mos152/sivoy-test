@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
+import { ExclusiveComponent } from './pages/exclusive/exclusive.component';
 
 const routes: Routes = [
   {
     path: '',
     children: [
-      { path: 'home-page', component: HomeComponent },
-      { path: '**', redirectTo: "home-page" }
+      { path: 'exclusive-page', component: ExclusiveComponent },
+      { path: '**', redirectTo: "exclusive-page" }
     ]
   }
 ]
@@ -18,4 +18,4 @@ const routes: Routes = [
     RouterModule.forChild(routes)
   ]
 })
-export class HomeRoutingModule { }
+export class ExclusiveRoutingModule { }

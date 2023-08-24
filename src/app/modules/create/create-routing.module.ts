@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
+import { CreateComponent } from './pages/create/create.component';
 
 const routes: Routes = [
   {
     path: '',
     children: [
-      { path: 'home-page', component: HomeComponent },
-      { path: '**', redirectTo: "home-page" }
+      { path: 'create-page', component: CreateComponent },
+      { path: '**', redirectTo: "create-page" }
     ]
   }
 ]
@@ -18,4 +18,4 @@ const routes: Routes = [
     RouterModule.forChild(routes)
   ]
 })
-export class HomeRoutingModule { }
+export class CreateRoutingModule { }
